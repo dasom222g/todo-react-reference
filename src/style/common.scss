@@ -10,7 +10,7 @@ body {
   font-weight:400;
 }
 button, input, textarea{
-  -webkit-appearance: none;
+  // -webkit-appearance: none;
   border:0;
   // outline: 0;
   all: unset;
@@ -195,4 +195,16 @@ input:disabled{
   svg {
     fill: $light-blue;
   }
+}
+
+.color-green {
+  background-color: $green;
+}
+
+.color-gray {
+  background-color: $gray-700;
+}
+
+.color-purple {
+  background-color: $purple;
 }
