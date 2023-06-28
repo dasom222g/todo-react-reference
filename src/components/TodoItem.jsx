@@ -5,12 +5,19 @@ import { TiEdit } from 'react-icons/ti';
 import { RiCloseCircleLine } from 'react-icons/ri';
 
 const TodoItem = ({ todo, completeTodo }) => {
+  // logic
   const { id, isComplete, text } = todo;
 
   const handleOnchage = () => {
     // porp으로 id 넘기기
     completeTodo(id);
   };
+
+  const handleDelete = () => {
+    console.log('click id', id);
+  };
+
+  // view
   return (
     <>
       <li className="todo__item">
@@ -28,7 +35,11 @@ const TodoItem = ({ todo, completeTodo }) => {
             <Link to={`/`} className="todo__item-button">
               <TiEdit className="todo__item-button-icon update" />
             </Link>
-            <button type="button" className="todo__item-button">
+            <button
+              type="button"
+              className="todo__item-button"
+              onClick={handleDelete}
+            >
               <RiCloseCircleLine className="todo__item-button-icon delete" />
             </button>
           </div>
