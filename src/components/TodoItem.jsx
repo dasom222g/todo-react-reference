@@ -14,6 +14,7 @@ const TodoItem = ({ todo, completeTodo }) => {
   };
 
   const handleDelete = () => {
+    // 여기부터야!!
     console.log('click id', id);
   };
 
