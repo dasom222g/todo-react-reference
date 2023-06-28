@@ -14,7 +14,7 @@ const TodoItem = ({ todo, completeTodo }) => {
   };
 
   const handleDelete = () => {
-    console.log('click id', id);
+    console.log('delete id', id);
   };
 
   // view
