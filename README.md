@@ -1,6 +1,6 @@
-# todo-boilerplate
+# todo-react-reference
 
-Todo boilerplate for React.
+리액트로 Todo앱 만들기 참고소스
 
 ---
 
@@ -10,7 +10,7 @@ Now clone this repository to your own device. Click the Clone or download button
 
 Open a terminal and run the following Git command:
 
-    $ git clone https://github.com/dasom222g/todo-boilerplate.git
+    $ git clone https://github.com/dasom222g/todo-react-reference.git
 
 Getting start
 
