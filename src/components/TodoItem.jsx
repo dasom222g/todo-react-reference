@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { TiEdit } from 'react-icons/ti';
 import { RiCloseCircleLine } from 'react-icons/ri';
 
-const TodoItem = ({ todo, completeTodo }) => {
+const TodoItem = ({ todo, completeTodo, deleteTodo }) => {
   // logic
   const { id, isComplete, text } = todo;
 
@@ -15,7 +15,7 @@ const TodoItem = ({ todo, completeTodo }) => {
 
   const handleDelete = () => {
     // 여기부터야!!
-    console.log('click id', id);
+    deleteTodo(id);
   };
 
   // view

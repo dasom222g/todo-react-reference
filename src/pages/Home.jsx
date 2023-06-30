@@ -16,6 +16,11 @@ const Home = () => {
     setTodoList(result);
   };
 
+  const deleteTodo = (id) => {
+    const filterTodoList = todoList.filter((todo) => todo.id !== id);
+    setTodoList(filterTodoList);
+  };
+
   return (
     <>
       <header>
@@ -24,7 +29,11 @@ const Home = () => {
         </h2>
       </header>
       <TodoInput addTodo={addTodo} />
-      <TodoList todoList={todoList} completeTodo={completeTodo} />
+      <TodoList
+        todoList={todoList}
+        completeTodo={completeTodo}
+        deleteTodo={deleteTodo}
+      />
     </>
   );
 };
